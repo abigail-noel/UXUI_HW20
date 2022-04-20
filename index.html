@@ -5,11 +5,15 @@
     <title>UX/UI Homework 20</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css"></head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
     <!--Navigation Bar-->
     <nav>
+        <nav class="justify-content-start" href="#">
+            <h1>AG</h1>
+        </nav>
         <!--Logo-->
         <ul class="nav justify-content-end">
             <li class="nav-item">
@@ -93,7 +97,7 @@
     <!--Design Artifacts Begin-->
     <!--UX Research Lilac-->
     <section>
-        <div class="container-fluid #BFB1C4">
+        <div class="container-fluid text-lilac">
             <div class="row">
                 <div class="col">
                     <h5 id="userResearch">Diving In</h5>
@@ -127,7 +131,7 @@
         <!--Development-->
         <div class="container-fluid">
             <div class="row">
-                <h4 {text-align: right;}>I Like, I Wish, What If</h4>
+                <h4>I Like, I Wish, What If</h4>
                 <p>We used affinity mapping to identify not only the general scope of the Firefighters Charitable
                     Foundation, but to decide which direction we wanted to take. This was a form of brainstorming during
                     our research period that proved to be very helpful in setting up the foundation for the rest of our
@@ -141,7 +145,7 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
+                <div class="col-6">
                     <h5>Development</h5>
                     <h4>Heuristic Evaluation</h4>
                     <p>The Firefighters Charitable Foundation needed some modernization, a refresher on hierarchy, and
@@ -154,9 +158,9 @@
                         <li>Create a way for users to get involved on a local level through a national organization</li>
                         <li>Show the impact of donations</li>
                     </ul>
-                    <img src="./Images/HOME _ ffcforg 2 (1).png" class="rounded float-left" height="500px" width="450px"
-                        alt="heuristicEval">
                 </div>
+                <img src="./Images/HOME _ ffcforg 2 (1).png" class="rounded col-6" height="500px" width="450px"
+                    alt="heuristicEval">
             </div>
         </div>
         <div class="row">
@@ -191,16 +195,38 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <h4>Card Sorting to Site Map</h4>
+                    <h4 style="text-align:left">Card Sorting to Site Map</h4>
                     <p>Unpopular opinion, I love to card sort. In card sorting, we found that the only way to digitally
                         donate to the Firefighters Charitable Foundation was by leaving the website and going to
                         AmazonSmile. In our iterated site map, we priortized keeping users on the wesbite and creating
                         two ways to donate within the site itself.</p>
                 </div>
-                <marquee behavior="scroll" direction="left">
-                    <img src="./Images/Card Sorting - 1.png" height="500px" width="450px" alt="cardSort">
-                    <img src="./Images/FFCF Site Map.png" height="500px" width="450px" alt="siteMap">
-                </marquee>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./Images/Card Sorting - 1.png" class="d-block" height="500px" width="450px"
+                                alt="cardSort">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Images/FFCF Site Map.png" class="d-block" height="500px" width="450px"
+                                alt="siteMap">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
         <!--Design-->
@@ -241,7 +267,7 @@
                 <div class="col">
                     <h5>Takeaways and Next Steps</h5>
                     <p><b>We went from user research to defining and ideating, from wireframes to mid-fi to a heavily
-                        iterated high-fi within our three-week time frame.</b></p>
+                            iterated high-fi within our three-week time frame.</b></p>
 
                     <p>For most of us, this was our first time working with each other, and we needed to learn each
                         other's communication, working, and design styles quickly to find a clear path forward. This
@@ -253,12 +279,7 @@
                 </div>
             </div>
         </div>
-
     </section>
-
-
-
-
     <!--Design Artifacts End-->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
